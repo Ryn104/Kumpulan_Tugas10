@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minggu 5</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <h1>Table & Form</h1>
+    <p>Belajar HTML: Materi Table dan Form</p>
+    <hr>
+
+    <h2>Table</h2>
+
+    <table border="1">
+        <tr>
+            <th colspan="5">Jadwal Pelajaran TKJ</th>
+        </tr>
+
+        <tr>
+            <th>No</th>
+            <th>Hari</th>
+            <th>Mata Pelajaran</th>
+            <th>Waktu</th>
+            <th>Ruangan</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Senin</td>
+            <td>Administrasi Infrastruktur Jaringan</td>
+            <td>07.00 - 09.00</td>
+            <td>Lab TKJ</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Senin</td>
+            <td>Teknologi Jaringan Berbasis Luas</td>
+            <td>09.00 - 11.00</td>
+            <td>Lab TKJ</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Selasa</td>
+            <td>Teknologi Layanan Jaringan</td>
+            <td>07.00 - 09.00</td>
+            <td>Lab TKJ</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Selasa</td>
+            <td>Komputer dan Jaringan Dasar</td>
+            <td>09.00 - 11.00</td>
+            <td rowspan="2">Lab TKJ</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Rabu</td>
+            <td>Pemrograman Dasar</td>
+            <td>07.00 - 09.00</td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h2>Form</h2>
+    <form>
+    
+        <label for="nama">Nama Lengkap:</label>
+        <br>
+        <input type="text" id="nama" name="nama" required>
+        <br>
+        <label for="kelas">Kelas:</label>
+        <br>
+        <input type="text" id="kelas" name="kelas" required>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <label>Jenis Kelamin:</label>
+        <br>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+        <br><br>
+        
+        <label>Divisi yang Diminati:</label>
+        <br>
+        <input type="radio" id="programming" name="divisi" value="Programming">
+        <label for="programming">Programming</label>
+        <input type="radio" id="networking" name="divisi" value="Networking">
+        <label for="networking">Networking</label>
+        <br><br>
+        
+        <label>Kemampuan yang Ingin Dipelajari:</label>
+        <br>
+        <input type="checkbox" id="html" name="kemampuan" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="kemampuan" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="kemampuan" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="python" name="kemampuan" value="Python">
+        <label for="python">PHP</label>
+        <br><br>
+        
+        <label for="alasan">Alasan Bergabung:</label>
+        <br>
+        <textarea id="alasan" name="alasan" rows="5" cols="40"></textarea>
+        <br><br>
+        
+        <input type="submit" value="Daftar">
+    </form>
+
+    <br>
+    <hr>
+
+</body>
+</html>
